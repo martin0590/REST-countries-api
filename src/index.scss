@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
+/*
+  - Homepage Items: 14px
+  - Detail Page: 16px 
+*/
+//Dark Mode Elements
+$Dark-Blue : hsl(209, 23%, 22%);
+//Dark Mode Background
+$Very-Dark-Blue : hsl(207, 26%, 17%);
+//Light Mode Text
+$Very-Dark-Blue : hsl(200, 15%, 8%);
+//Light Mode Input
+$Dark-Gray : hsl(0, 0%, 52%);
+//Light Mode Background
+$Very-Light-Gray : hsl(0, 0%, 98%);
+//Dark Mode Text & Light Mode Elements
+$White : hsl(0, 0%, 100%);
+
+
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: $Very-Light-Gray;
+  font-family: Nunito sans, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}

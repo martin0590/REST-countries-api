@@ -1,0 +1,49 @@
+//Dark Mode Elements
+$Dark-Blue: hsl(209, 23%, 22%);
+//Dark Mode Background
+$Very-Dark-Blue: hsl(207, 26%, 17%);
+//Light Mode Text
+$Very-Dark-Blue-text: hsl(200, 15%, 8%);
+//Light Mode Input
+$Dark-Gray: hsl(0, 0%, 52%);
+//Light Mode Background
+$Very-Light-Gray: hsl(0, 0%, 98%);
+//Dark Mode Text & Light Mode Elements
+$White: hsl(0, 0%, 100%);
+
+.full-container {
+  height: 100vh;
+
+  .full-content-container {
+    width: 90%;
+
+    margin: 0 auto;
+
+    .wrapper-error {
+      height: 100vh;
+      .error-handling {
+        text-align: center;
+      }
+    }
+
+    .wrapper-error.dark {
+      background: $Very-Dark-Blue;
+    }
+  }
+
+  .full-content-container.dark {
+    background: $Very-Dark-Blue;
+    color: $Very-Light-Gray;
+  }
+
+  .full-content-container.dark > div {
+    background: $Very-Dark-Blue;
+    color: $Very-Light-Gray;
+  }
+}
+
+.full-container.dark {
+  height: 100%;
+  background: $Very-Dark-Blue;
+  color: $Very-Light-Gray;
+}

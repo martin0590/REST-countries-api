@@ -1,0 +1,61 @@
+//Dark Mode Elements
+$Dark-Blue: hsl(209, 23%, 22%);
+//Dark Mode Background
+$Very-Dark-Blue: hsl(207, 26%, 17%);
+//Light Mode Text
+$Very-Dark-Blue-text: hsl(200, 15%, 8%);
+//Light Mode Input
+$Dark-Gray: hsl(0, 0%, 52%);
+//Light Mode Background
+$Very-Light-Gray: hsl(0, 0%, 98%);
+//Dark Mode Text & Light Mode Elements
+$White: hsl(0, 0%, 100%);
+
+.filter-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-left: 1rem;
+
+  #filter-region {
+    width: 11rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+
+  .form {
+    position: relative;
+    .input-search {
+      width: 28rem;
+      height: 3.5rem;
+      border: none;
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+      font-family: Nunito sans, sans-serif;
+      border-radius: 4px;
+      font-size: 26px;
+      // position: relative;
+    }
+
+    .input-search:focus {
+      outline: none;
+    }
+
+    .input-search::placeholder {
+      font-size: 15px;
+      color: rgb(200, 200, 200);
+      position: absolute;
+      left: 65px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .input-search.dark {
+      background-color: $Dark-Blue;
+      color: white;
+      font-size: 26px;
+    }
+  }
+}

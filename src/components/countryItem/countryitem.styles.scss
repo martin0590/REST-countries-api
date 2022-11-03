@@ -1,0 +1,65 @@
+//Dark Mode Elements
+$Dark-Blue: hsl(209, 23%, 22%);
+//Dark Mode Background
+$Very-Dark-Blue: hsl(207, 26%, 17%);
+//Light Mode Text
+$Very-Dark-Blue-text: hsl(200, 15%, 8%);
+//Light Mode Input
+$Dark-Gray: hsl(0, 0%, 52%);
+//Light Mode Background
+$Very-Light-Gray: hsl(0, 0%, 98%);
+//Dark Mode Text & Light Mode Elements
+$white: hsl(0, 0%, 100%);
+
+.countries-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: $Very-Light-Gray;
+
+  .country {
+    cursor: pointer;
+    box-shadow: 0 1px 8px 0.1px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    .img {
+      width: 260px;
+      height: 166px;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .text-container {
+      height: 10.5rem;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+      color: $Very-Dark-Blue-text;
+      h3 {
+        font-weight: 800;
+      }
+
+      p {
+        line-height: 0.8rem;
+      }
+    }
+
+    .text-container.dark {
+      color: $white;
+      background-color: $Dark-Blue;
+    }
+  }
+
+  .country.dark {
+    background-color: $Dark-Blue;
+  }
+}
+
+@media screen and (min-width: 782px) {
+  .countries-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
