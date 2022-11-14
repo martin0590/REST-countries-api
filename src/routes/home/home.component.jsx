@@ -16,7 +16,7 @@ function Home() {
         <FilterItem />
         {handError && (
           <div className="wrapper-error">
-            <h1 className="error-handling">No country with than name</h1>
+            <h1 className="error-handling">No country with that name</h1>
           </div>
         )}
         {!handError && <CountryItem />}

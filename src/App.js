@@ -10,9 +10,9 @@ function App() {
 
   return (
         <Routes>
-          <Route path='/' element={<NavBar />}>
+          <Route path='/REST-countries-api' element={<NavBar />}>
               <Route index element={<Home />}/>
-              <Route path=':country' element={<Country />}/>
+              <Route path='/REST-countries-api/:country' element={<Country />}/>
           </Route>
         </Routes>
     )

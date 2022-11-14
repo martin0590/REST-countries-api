@@ -49,6 +49,7 @@ const FilterItem = () => {
       border: state.isFocused ? "1px solid #202c37" : "1px solid #202c37",
       borderColor: "gray",
       backgroundColor: "#2b3945",
+      transition: 'none',
       ":hover": { borderColor: "#959595" },
     }),
 
@@ -92,6 +93,7 @@ const FilterItem = () => {
       border: state.isActive ? "1px solid lightgray" : "1px solid lightgray",
       border: state.isFocused ? "1px solid lightgray" : "1px solid lightgray",
       borderColor: "white",
+      transition: 'none',
       ":hover": { borderColor: "#959595" },
     }),
 

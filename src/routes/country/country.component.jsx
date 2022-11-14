@@ -31,7 +31,7 @@ const Country = () => {
   return (
     <div className={`full-country-container ${!isDark ? "light" : "dark"}`}>
       <div className={`country-container ${!isDark ? "light" : "dark"}`}>
-        <Link to="/">
+        <Link to="/REST-countries-api">
           <FaLongArrowAltLeft className="arrow-icon" /> Back
         </Link>
         {countries.map(
